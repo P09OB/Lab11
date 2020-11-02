@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style.css" rel="stylesheet">
+    <title>Laboratorio 11</title>
+</head>
+
+
+<body>
+
+    <div id= "Publicacion">
+
+        <input id= "name" placeholder= "Nombre" type= "text">
+        <label for="comentario">Crear Publicación</label>
+        <textarea id="comentario"placeholder="Estado" name="extra" rows="10" cols="4"></textarea>
+        
+        <button id= "publicar">Publicar</button>
+    
+        </button>
+    
+    </div>
+
+    <div id= "containerPost">
+
+
+    </div>
+    
+</body>
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+<script>
+
+    var firebaseConfig = {
+      apiKey: "AIzaSyB6awQ-YjqLNePZp74uy-ZFnUZ2epOXjQo",
+      authDomain: "lab11-16cbb.firebaseapp.com",
+      databaseURL: "https://lab11-16cbb.firebaseio.com",
+      projectId: "lab11-16cbb",
+      storageBucket: "lab11-16cbb.appspot.com",
+      messagingSenderId: "200490922784",
+      appId: "1:200490922784:web:4d99005bbf93fe4e201d45"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+  </script>
+<script src= "Componentes/Comentario.js"></script>
+<script src= "Componentes/Publicacion.js"></script>
+<script src= "Java.js"></script>

@@ -1,0 +1,27 @@
+#Publicacion{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: aqua;
+background-color: #fca311;
+padding: 20px;
+}
+
+#comentario{
+
+    margin: 10px;
+    height: 100px;
+    width: 40%;
+}
+
+.generalComponent{
+
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+}
