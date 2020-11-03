@@ -44,6 +44,8 @@ class Publicacion{
 
         database.ref('Comentarios/'+this.publicacion.id).on("value",function(data){
 
+            postcomment.innerHTML = '';
+
             data.forEach(
                 
                 postComment=>{

@@ -27,6 +27,8 @@ mandar = () =>{
 
 database.ref('publicacion').on('value',function(data){
 
+    containerPost.innerHTML = '';
+
     data.forEach(
 
         publicaciones =>{
